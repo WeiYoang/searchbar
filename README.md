@@ -13,7 +13,7 @@
 #### $searchbar filepath word
 ### 调试模式 （debug model）
 ##### 显示用于检索的红黑树以中序遍历。
-#### $searchbar -v filepath
+#### $searchbar -r filepath
 
 * 注意
 #### 由于个人时间关系，此程序没有完全写完，缺少文本文件的预处理程序即格式化，因为在设计时将标点符号看作单词而每个单词之间应该有空格，比如下列例子：
