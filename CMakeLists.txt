@@ -1,0 +1,7 @@
+PROJECT(main) 
+SET(SRC_LIST main.cpp TestForFileStream.hpp TestForFileStream.cpp) 
+SET(CMAKE_CXX_COMPILER "clang++") 
+SET(CMAKE_CXX_FLAGS "-std=c++11")
+SET(CMAKE_EXE_LINKER_FLAGS "-lc++ -lc++abi") 
+SET(CMAKE_BUILD_TYPE Debug) 
+ADD_EXECUTABLE(searchbar ${SRC_LIST})
