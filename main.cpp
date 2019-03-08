@@ -19,8 +19,14 @@ int main(int argc,char* argv[]){
     else{
            ifstream fin;
            DoubleList list;
-           RBstructure(fin,list,argv[1]);
-           cout<<Search(list.getRBheader(),list.getNIL(),argv[2]);
+           string str(argv[1]);
+           if(str=="-r"){
+                RBstructure(fin,list,argv[2]);
+                InorderTreeWalk(list.getRBheader());
+           } else {
+                 RBstructure(fin,list,argv[1]);
+                cout<<Search(list.getRBheader(),list.getNIL(),argv[2]);
+           }
       }
         return 0;
 };
